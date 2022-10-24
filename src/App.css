@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+.App {
+  text-align: center;
+}
+
+nav {
+  margin: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #381d2a;
+  display: flex;
+
+  justify-content: flex-end;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  margin: 20px;
+  font-size: 25px;
+}
+
+a:hover {
+  color: #Ba5624;
+  transform: scale(1.2, 1.2);
+  
+}
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #ffa552;
+  border-right: none;
+  padding: 5px;
+  height: 30px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9dbfaf;
+}
+
+.searchTerm:focus {
+  color: #381d2a;
+}
+
+.searchButton {
+  width: 50px;
+  height: 46px;
+  border: 1px solid   #ffa552;
+  background: #ffa552;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+
+.wrap {
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.products {
+  width: 100%;
+  height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+}
+.productsNav {
+  width: 70%;
+  height: 80px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+}
+
+.productsNav a {
+  width: 150px;
+  height: 50px;
+  background-color: #381d2a;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*
+.listOfProducts {
+  width: 100%;
+  height: calc(100vh - 80px);
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+} 
+
+.productsList {
+  /* column-count: 3;
+  gap: 10px; */
+  /* columns: 3 auto;
+  display: inline-block; 
+}
+*/
+
+.productDisplay {
+  margin-top: 40px;
+  width: 300px;
+  height: 300px;
+  background-color: rgb(233, 233, 233);
+  border-radius: 5px;
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.4);
+
+  cursor: pointer;
+}
+.productimage{
+  width: 100%;
+  height: 200px;
+  border-radius: 5px 5px 0 0;
+  object-fit: cover;
+}
+
+.productDisplay > h1{
+  margin: 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.productDisplay > p{
+  margin: 10px;
+  font-size: 16px;
+  font-weight: 200;
+}
+
+.home{
+  display: flex;
+  flex-direction: column;
+}
+
+.home h1{
+  font-size: 30px;
+  font-weight: 500;
+  margin: 20px;
+  align-items: center;
+}
+
+
+.homecontainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.about{
+  display: flex;
+  flex-direction: column;
+}
+
+.about h1{
+  font-size: 30px;
+  font-weight: 500;
+  margin: 20px;
+  align-items: center;
+}
+
+.aboutcontainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.numbers{
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+}
+
+.numbers button{
+  
+  width: 100px;
+  height: 50px;
+  border-radius: 10%;
+  background-color: #fff;
+  color: black;
+  font-size: 30px;
+}
+
+.numbers button:hover{
+  background-color: #ffa552;
+  color: white;
+}
+
+.numbers button:active{
+  background-color: #ffa552;
+  color: white;
+}
+
+.users{
+display: flex;
+flex-direction: column;
+margin: 5px;
+}
+
+.users h1{
+  font-size: 30px;
+  font-weight: 500;
+  margin: 20px;
+  align-items: center;
+}
+
+.users p{
+  font-size: 20px;
+  font-weight: 500;
+  margin: 20px;
+  align-items: center;
+}
+
+
+.usercontainer{
+  display: flex;
+  
+  flex-direction: row;
+  margin: 20px;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.4);
+}
+
+.userimg{
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  object-fit: cover;
+}
+
+.userimg img{
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.mainuser{
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.usercontainer h1{
+
+  font-size: 20px;
+  font-weight: 500;
+  margin: 20px;
+  align-items: center;
+}
+
+.username{
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  width:300px;
+}
+
+.userphone{
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
