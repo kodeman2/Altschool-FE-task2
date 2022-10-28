@@ -151,7 +151,7 @@ a:hover {
 .home{
   display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 70%;
 }
 
 .home h1{
