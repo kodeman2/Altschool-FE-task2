@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Soleuser = ({user}) => {
- console.log(user)
+
   return (
     <div className='usercontainer'>
      <div className="userimg">
