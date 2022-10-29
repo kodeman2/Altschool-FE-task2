@@ -12,6 +12,7 @@ import ListProducts from "./components/products/ListProducts";
 import ErrorPage from "./components/ErrorPage";
 import { ErrorBoundary } from "./components/ErrorBoundary";
 
+
 function App() {
   return (
     <Router>
@@ -27,6 +28,8 @@ function App() {
         
       <Routes>
         <Route path="/" element={<Home />} />
+
+
         
 <Route path="*" element={<ErrorPage/>} />
 
